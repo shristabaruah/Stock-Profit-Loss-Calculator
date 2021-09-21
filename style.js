@@ -9,6 +9,7 @@ function calculateProfitLoss(initial,quantity,current){
     if(initial>current){
         var loss = (initial - current) * quantity;
         var lossperc = (((initial-current)*100)/initial).toFixed(2);
+        
         showOutput(`The loss is Rs${loss} and loss percentage is ${lossperc}%`);
     }else if(current > initial){
         var profit = (current - initial) * quantity;
